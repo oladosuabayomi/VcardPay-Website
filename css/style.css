@@ -41,7 +41,8 @@ nav {
 .top-nav li a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .top-nav li a:hover {
@@ -60,16 +61,31 @@ nav {
 }
 
 .verification a.signUp {
-    border: 2px solid rgb(255, 123, 0);
+    border: 2.5px solid rgb(255, 123, 0);
     border-radius: 20px 0 0 20px;
     padding: 6px;
+    transition: transform 0.3s;
+}
+
+.verification a.signUp:hover,
+.verification a.login:hover,
+.explore:hover {
+    transform: scale(1.04);
 }
 
 .verification a.login {
     padding: 8px;
     background: var(--primary-color);
     border-radius: 0 20px 20px 0;
+    transition: transform 0.3s;
 }
+
+/* .small-container {
+    padding: 200px;
+    margin: 0 auto;
+    width: 600px;
+    height: 100%;
+} */
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-image-2.JPG);
@@ -85,17 +101,38 @@ nav {
 
 .hero-info {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 56%;
+    left: 35%;
     transform: translate(-50%, -50%);
+    width: 450px;
 }
 
-.hero-info h1 {
-    font-size: 50px;
+.hero-info .highlighter {
+    border: 2px solid rgb(255, 123, 0);
+    width: 100px;
+    height: 1px;
+}
+
+.hero-info h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.hero-info p {
+    margin: 20px 0;
+    color: rgb(186, 186, 186);
+    font-size: 14px;
 }
 
 .explore {
     padding: 10px;
     background: var(--primary-color);
     border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 123, 0);
 }
