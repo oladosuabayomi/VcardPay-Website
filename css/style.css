@@ -141,10 +141,10 @@ nav {
 }
 
 .small-container {
-    max-width: 1060px;
+    max-width: 1000px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
 }
 
 .row {
@@ -159,6 +159,7 @@ nav {
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .col-3 img {
@@ -185,12 +186,12 @@ nav {
     font-size: 11px;
 }
 
-.col-3 {
-    text-align: center;
+.offer {
+    background-color: #E9E9E9;
 }
 
 .col-2 {
-    flex-basis: 50%;
+    flex-basis: 40%;
     min-width: 300px;
 }
 
@@ -199,6 +200,5 @@ nav {
 }
 
 .col-2 .review img.illustration {
-    width: 100%;
-    height: 20px;
+    max-width: 100%;
 }
