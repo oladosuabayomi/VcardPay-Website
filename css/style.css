@@ -127,6 +127,10 @@ nav {
     font-size: 14px;
 }
 
+.services {
+    margin-top: 64px;
+}
+
 .explore {
     padding: 10px;
     background: var(--primary-bg-color);
@@ -148,7 +152,6 @@ nav {
 }
 
 .row {
-    margin-top: 60px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -186,7 +189,7 @@ nav {
     font-size: 11px;
 }
 
-.offer {
+#explore {
     background-color: #E9E9E9;
 }
 
@@ -201,4 +204,11 @@ nav {
 
 .col-2 .review img.illustration {
     max-width: 100%;
+}
+
+.explore2 {
+    background-image: url(/images/bg-image-4.JPG);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
