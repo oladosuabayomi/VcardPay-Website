@@ -114,6 +114,7 @@ nav {
     border: 2px solid var(--secondary-text-color-2);
     width: 60px;
     height: 2px;
+    margin-top: 4px;
 }
 
 .hero-info h2 {
@@ -193,8 +194,51 @@ nav {
 }
 
 .about {
-    padding-top: 20px;
-    background-color: #E9E9E9;
+    height: 50vh;
+    background-color: #dbd9d9;
+}
+
+.about p, .testimonial p {
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.services {
+    height: 50vh;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.services .col-3 {
+    background-color: #f0f0f0;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
+}
+.testimonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-image-4.JPG"); 
+    background-size: cover;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: white;
+}
+
+.testimonial .small-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+
+.testimonial .review {
+    width: 40%;
+    text-align: right;
+}
+
+.testimonial .review .highlighter {
+    margin-left: 84%;
 }
 
 
