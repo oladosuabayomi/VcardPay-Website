@@ -5,6 +5,10 @@
     --secondary-text-color-2: rgb(255, 123, 0);
 }
 
+body {
+    background-color: #f0f0f0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -128,10 +132,6 @@ nav {
     font-size: 14px;
 }
 
-.services {
-    margin-top: 64px;
-}
-
 .explore {
     padding: 10px;
     background: var(--primary-bg-color);
@@ -193,68 +193,45 @@ nav {
     min-width: 300px;
 }
 
-.about {
-    height: 50vh;
-    background-color: #dbd9d9;
+.section-heading {
+text-align: center;
+margin-bottom: 20px;
 }
 
-.about p, .testimonial p {
+.about {
+    padding: 40px 0;
+}
+
+.about p, .testimonial p, .about-2 .col-2 p {
     margin: 16px 0;
     font-size: 14px;
 }
 
+.about-2 {
+    margin-top: 40px;
+    background-color: #f0f0f0;
+}
+
 .services {
-    height: 50vh;
-    padding-top: 40px;
-    margin-bottom: 100px;
+    padding: 30px 0 30px 0;
+    margin: 40px 0;
+    background-color: #dedede;
 }
 
 .services .col-3 {
+    flex-basis: 30%;
     background-color: #f0f0f0;
-    padding: 30px 20px;
+    padding: 20px 20px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
 }
+
 .testimonial {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-image-4.JPG"); 
     background-size: cover;
-    padding: 40px 0;
+    padding: 20px 0;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     color: white;
 }
-
-.testimonial .small-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 40px;
-}
-
-.testimonial .review {
-    width: 40%;
-    text-align: right;
-}
-
-.testimonial .review .highlighter {
-    margin-left: 84%;
-}
-
-
-
-/* .col-2 .review p {
-    margin: 20px 0;
-}
-
-.col-2 .review img.illustration {
-    max-width: 100%;
-} */
-
-/* .explore2 {
-    background-image: url("../images/bg-image-4.JPG");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- */
