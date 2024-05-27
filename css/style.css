@@ -202,14 +202,9 @@ margin-bottom: 20px;
     padding: 40px 0;
 }
 
-.about p, .testimonial p, .about-2 .col-2 p {
+.about p, .testimonial p, .contact .col-2 p {
     margin: 16px 0;
     font-size: 14px;
-}
-
-.about-2 {
-    margin-top: 40px;
-    background-color: #f0f0f0;
 }
 
 .services {
@@ -226,12 +221,18 @@ margin-bottom: 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
 }
 
-.testimonial {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-image-4.JPG"); 
-    background-size: cover;
-    padding: 20px 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    color: white;
+.contact {
+    margin-top: 40px;
+    background-color: #f0f0f0;
+    padding-bottom: 40px;
+}
+
+.sponsors {
+    background-color: #dedede;
+}
+
+.sponsors .small-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
