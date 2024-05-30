@@ -289,9 +289,8 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
 }
 
 .contact {
-    margin-top: 40px;
     background-color: #f0f0f0;
-    padding-bottom: 40px;
+    padding: 60px 0;
 }
 
 .sponsors, .testimonial {
