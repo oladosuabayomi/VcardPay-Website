@@ -15,12 +15,15 @@
 
 <body>
     <header>
-        <div class="small-container">
-            <nav>
-                <div class="logo">
-                    <img src="images/LOGO.png" alt="logo">
-                </div>
-                <div class="top-nav">
+            <div class="logo">
+                <img src="images/LOGO.png" alt="logo">
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <nav class="top-nav" id="top-nav">
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
@@ -32,12 +35,8 @@
                         <a class="signUp" href="#">SIGN UP</a>
                         <a class="login" href="#">LOGIN</a>
                     </div>
-                </div>
-                <img src="images/icons8-menu-50 (1).png" class="menu-icon" onclick="menutoggle()">
             </nav>
-        </div>
     </header>
-    <div class="overlay" onclick="closeMenu()"></div>
     <main>
         <div class="hero">
             <div class="hero-info">
@@ -276,6 +275,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        // script.js
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById('menu-icon');
+    const menu = document.getElementById('top-nav');
+
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('change');
+        menu.classList.toggle('open');
+    });
+});
+
+    </script>
     <!--  <script>
         function menutoggle() {
             var nav = document.querySelector('nav');
