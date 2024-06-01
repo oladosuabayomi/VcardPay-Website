@@ -28,14 +28,16 @@
                         <li><a href="#">TESTIMONIAL</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
+                    <div class="verification">
+                        <a class="signUp" href="#">SIGN UP</a>
+                        <a class="login" href="#">LOGIN</a>
+                    </div>
                 </div>
-                <div class="verification">
-                    <a class="signUp" href="#">SIGN UP</a>
-                    <a class="login" href="#">LOGIN</a>
-                </div>
+                <img src="images/icons8-menu-50 (1).png" class="menu-icon" onclick="menutoggle()">
             </nav>
         </div>
     </header>
+    <div class="overlay" onclick="closeMenu()"></div>
     <main>
         <div class="hero">
             <div class="hero-info">
@@ -107,8 +109,6 @@
                             globe.
                         </p>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-3">
                         <img class="wallet" src="images/wallet.svg">
                         <h3>Mobile Wallet Integration</h3>
@@ -148,7 +148,9 @@
                     <div class="col-3">
                         <i class="quote"><img src="images/quote-left.svg"></i>
                         <p>
-                            VcardPay has revolutionized how I manage transactions for my online store. The seamless integration and AI fraud detection give me peace of mind. Their support team is always helpful and available. I'm thrilled with the service!
+                            VcardPay has revolutionized how I manage transactions for my online store. The seamless
+                            integration and AI fraud detection give me peace of mind. Their support team is always
+                            helpful and available. I'm thrilled with the service!
                         </p>
                         <div class="rating">
                             <i><img src="images/star.svg"></i>
@@ -163,7 +165,9 @@
                     <div class="col-3">
                         <i class="quote"><img src="images/quote-left.svg"></i>
                         <p>
-                            Switching to VcardPay was a great decision for my business. The global payment solutions helped me reach international customers effortlessly. The customer insights are invaluable for tailoring my services. VcardPay understands what businesses need.
+                            Switching to VcardPay was a great decision for my business. The global payment solutions
+                            helped me reach international customers effortlessly. The customer insights are invaluable
+                            for tailoring my services. VcardPay understands what businesses need.
                         </p>
                         <div class="rating">
                             <i><img src="images/star.svg"></i>
@@ -178,7 +182,9 @@
                     <div class="col-3">
                         <i class="quote"><img src="images/quote-left.svg"></i>
                         <p>
-                            VcardPay's mobile wallet integration is a game-changer. My customers love the convenience, and I've seen a boost in sales. The support team is always there to help, making the whole experience smooth. Highly recommend VcardPay!
+                            VcardPay's mobile wallet integration is a game-changer. My customers love the convenience,
+                            and I've seen a boost in sales. The support team is always there to help, making the whole
+                            experience smooth. Highly recommend VcardPay!
                         </p>
                         <div class="rating">
                             <i><img src="images/star.svg"></i>
@@ -209,10 +215,10 @@
             <div class="small-container">
                 <div class="row">
                     <div class="col-2">
-                        <img width="100%" height="100%" class="illustration"
+                        <img width="100%" class="illustration"
                             src="images/profile_data_illustration02.svg">
                     </div>
-                    <div class="col-2" style="padding-left: 120px;">
+                    <div class="col-2">
                         <h3>Get in Touch with VcardPay - We are Here to Help.</h3>
                         <div class="highlighter"></div>
                         <p>
@@ -270,6 +276,23 @@
             </div>
         </div>
     </footer>
+    <!--  <script>
+        function menutoggle() {
+            var nav = document.querySelector('nav');
+            var overlay = document.querySelector('.overlay');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            var nav = document.querySelector('nav');
+            var overlay = document.querySelector('.overlay');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+    </script>  -->
+
 </body>
 
 </html>
