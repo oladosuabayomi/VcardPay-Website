@@ -5,6 +5,7 @@
     --secondary-text-color-2: rgb(255, 123, 0);
 }
 
+/* GENERAL STYLE PROPERTY */
 body {
     background-color: #f0f0f0;
 }
@@ -16,12 +17,82 @@ body {
     font-family: "poppins", sans-serif;
 }
 
+p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #5e5e5e;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    padding: 10px 8px;
+    background: var(--primary-bg-color);
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.highlighter {
+    border: 3px solid var(--secondary-text-color-2);
+    width: 60px;
+    height: 2px;
+    margin-top: 4px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.small-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.col-3:hover {
+    transform: translateY(-5px);
+}
+
+.col-3 h3 {
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.col-2 {
+    flex-basis: 30%;
+    min-width: 300px;
+}
+
+/* HEADER */
 header {
     position: relative;
     background-color: #535353e4;
     padding: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
+/* NAV SECTION */
 
 nav {
     display: flex;
@@ -31,9 +102,17 @@ nav {
     margin: auto;
 }
 
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .top-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style-type: none;
-    position: relative;
 }
 
 .top-nav li {
@@ -58,7 +137,11 @@ nav {
     transition: 0.3s;
 }
 
-.verification a.signUp, .verification a.login {
+.verification {
+    padding-left: 40px;
+}
+.verification a.signUp,
+.verification a.login {
     text-decoration: none;
     text-align: center;
     color: white;
@@ -89,6 +172,24 @@ nav {
     transition: transform 0.3s;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+ /* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+ */
+/* HERO SECTION */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-image-2.JPG");
     height: 500px;
@@ -109,17 +210,8 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* left: 35%; */
     transform: translate(-50%, -50%);
-   /*  width: 450px; */
     text-align: center;
-}
-
-.highlighter {
-    border: 3px solid var(--secondary-text-color-2);
-    width: 60px;
-    height: 2px;
-    margin-top: 4px;
 }
 
 .hero-info h2 {
@@ -135,21 +227,7 @@ nav {
 
 .hero-info span {
     padding-bottom: 5px;
-border-bottom: 4px dotted var(--secondary-text-color-2);
-}
-
-.btn {
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
-    width: 100px;
-    padding: 10px 8px;
-    background: var(--primary-bg-color);
-    border-radius: 20px;
-    transition: transform 0.3s;
+    border-bottom: 4px dotted var(--secondary-text-color-2);
 }
 
 .horizontal-line {
@@ -158,75 +236,18 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
     background: var(--primary-bg-color);
 }
 
-.small-container {
-    /* max-width: 1000px; */
-    width: 90%;
-    margin: 0 auto;
+/* ABOUT */
+.about {
+    padding: 40px 0;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.col-3 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.col-3:hover {
-    transform: translateY(-5px);
-}
-
+/* SERVICES */
 .services .col-3 img {
     background: var(--secondary-bg-color);
     width: 70px;
     height: 70px;
     border-radius: 50%;
     padding: 10px;
-}
-
-.col-3 h3 {
-    color: var(--secondary-text-color);
-    margin-bottom: 10px;
-}
-
-.col-3 .info-1 {
-    color: var(--secondary-text-color);
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.col-3 .info-2 {
-    color: var(--secondary-text-color-2);
-    font-size: 11px;
-}
-
-.col-2 {
-    flex-basis: 40%;
-    min-width: 300px;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.about {
-    padding: 40px 0;
-}
-
-.about p,
-.testimonial p,
-.contact .col-2 p {
-    margin: 16px 0;
-    font-size: 14px;
 }
 
 .services {
@@ -236,13 +257,13 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
 }
 
 .services .col-3 {
-    flex-basis: 28%;
     background-color: #f0f0f0;
     padding: 30px 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
-    height: 340px;
+    height: 320px;
 }
 
+/* TESTIMONIAL */
 .testimonial {
     padding-top: 40px;
 
@@ -253,9 +274,9 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
     padding: 30px 20px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
-    height: 360px;
     cursor: pointer;
     transition: transform 0.5s;
+    height: 365px;
 }
 
 .rating img {
@@ -276,24 +297,15 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
     width: 34px;
 }
 
-.col-3 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
 .testimonial .col-3 h3 {
     font-weight: 600;
     color: #555;
     font-size: 16px;
 }
 
-.contact {
-    background-color: #f0f0f0;
-    padding: 60px 0;
-}
-
-.sponsors, .testimonial {
+/* SPONSORS */
+.sponsors,
+.testimonial {
     background-color: #d4d2d2;
 }
 
@@ -303,10 +315,22 @@ border-bottom: 4px dotted var(--secondary-text-color-2);
     justify-content: space-between;
 }
 
+/* CONTACT */
+.contact {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+
+/* FOOTER */
 footer {
     background: var(--secondary-bg-color);
-    color: #f0f0f0;
     padding: 60px 0 40px 0;
+    color: #f0f0f0;
+}
+
+footer p {
+    color: #f0f0f0;
 }
 
 footer .social-media {
@@ -336,8 +360,8 @@ footer .footer-links a {
 }
 
 footer .footer-links a:hover {
-color: var(--secondary-text-color-2);
-transition: 0.3s;
+    color: var(--secondary-text-color-2);
+    transition: 0.3s;
 }
 
 footer .footer-links .container {
@@ -368,7 +392,7 @@ footer .footer-links .company-caption {
 }
 
 footer .footer-links .company-caption img {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 footer .footer-links .useful-links {
@@ -393,8 +417,86 @@ footer hr {
 
 .copyright a {
     text-decoration: none;
-   color: #f0f0f0;
+    color: #f0f0f0;
 }
 
+/* Media Queries */
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
 
+    .top-nav {
+       display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-info h2 {
+        font-size: 22px;
+    }
+
+    .hero-info p {
+        font-size: 14px;
+    }
+
+    .top-nav, .top-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .top-nav li a {
+        font-size: 14px;
+    }
+
+    .col-2, .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services, .testimonial, .contact, footer {
+        padding: 20px 0;
+    }
+
+    .services .col-3, .testimonial .col-3 {
+        margin-bottom: 20px;
+    } 
+
+    .sponsors .small-container {
+        flex-direction: column;
+    }
+
+    footer .footer-links .container {
+       width: 100%;
+        flex-direction: column;
+    }
+
+    footer .footer-links .container .col-2 {
+        flex-basis: 100%;
+        padding: 10px 0;
+    }
+
+    footer .footer-links .download-container .download {
+        flex-direction: column;
+    }
+
+    footer .footer-links .download-container img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    footer .footer-links .company-caption {
+        text-align: left;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
 
