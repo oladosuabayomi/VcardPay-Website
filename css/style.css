@@ -427,6 +427,10 @@ footer hr {
         padding: 10px;
     }
 
+    p {
+        font-size: 14px;
+    }
+
     .top-nav {
        display: none;
     }
@@ -436,7 +440,7 @@ footer hr {
     }
 
     .hero-info h2 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .hero-info p {
