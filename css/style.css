@@ -260,7 +260,7 @@ nav {
     background-color: #f0f0f0;
     padding: 30px 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
-    height: 320px;
+    height: 360px;
 }
 
 /* TESTIMONIAL */
@@ -276,7 +276,7 @@ nav {
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
     cursor: pointer;
     transition: transform 0.5s;
-    height: 365px;
+    height: 400px;
 }
 
 .rating img {
@@ -439,12 +439,20 @@ footer hr {
         display: block;
     }
 
+    .hero {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
     .hero-info h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .hero-info p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .top-nav, .top-nav ul {
@@ -481,6 +489,7 @@ footer hr {
     footer .footer-links .container {
        width: 100%;
         flex-direction: column;
+        padding-top: 20px;
     }
 
     footer .footer-links .container .col-2 {
