@@ -425,7 +425,7 @@ footer .footer-links .download-container {
 
 footer .footer-links .company-caption {
     font-size: 12px;
-    width: 50%;
+    width: 100%;
 }
 
 footer .footer-links .company-caption img {
@@ -573,10 +573,10 @@ footer hr {
         padding-top: 20px;
     }
 
-    footer .footer-links .container .col-2 {
+    /* footer .footer-links .container .col-2 {
         flex-basis: 100%;
         padding: 10px 0;
-    }
+    } */
 
     footer .footer-links .download-container .download {
         flex-direction: column;
