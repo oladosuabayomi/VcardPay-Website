@@ -15,32 +15,32 @@
 
 <body>
     <header>
-            <div class="logo">
-                <img src="images/LOGO.png" alt="logo">
+        <div class="logo">
+            <img src="images/LOGO.png" alt="logo">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <nav class="top-nav" id="top-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIAL</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+            <div class="verification">
+                <a class="signUp" href="#">SIGN UP</a>
+                <a class="login" href="#">LOGIN</a>
             </div>
-            <div class="menu-icon" id="menu-icon">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
-            <nav class="top-nav" id="top-nav">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">TESTIMONIAL</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                    <div class="verification">
-                        <a class="signUp" href="#">SIGN UP</a>
-                        <a class="login" href="#">LOGIN</a>
-                    </div>
-            </nav>
+        </nav>
     </header>
     <main>
-        <div class="hero">
+        <div id="hero" class="hero">
             <div class="hero-info">
-                <h2>Revolutionize Your Payments.</h2>
+                <h1>Revolutionize Your Payments.</h1>
                 <p>
                     The Future of Seamless Transactions. Experience the Power of AI-Driven Payment Solutions.
                 </p>
@@ -49,7 +49,7 @@
         </div>
         <div class="horizontal-line">
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <div class="small-container">
                 <h2 class="section-heading">Who Are We?</h2>
                 <div class="row">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="services">
+        <div id="services" class="services">
             <div class="small-container">
                 <h2 class="section-heading">Our Services</h2>
                 <div class="row">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial">
+        <div id="testimonial" class="testimonial">
             <div class="small-container">
                 <h2 class="section-heading">Testimonials</h2>
                 <div class="row">
@@ -181,6 +181,23 @@
                     <div class="col-3">
                         <i class="quote"><img src="images/quote-left.svg"></i>
                         <p>
+                            Switching to VcardPay was a great decision for my business. The global payment solutions
+                            helped me reach international customers effortlessly. The customer insights are invaluable
+                            for tailoring my services. VcardPay understands what businesses need.
+                        </p>
+                        <div class="rating">
+                            <i><img src="images/star.svg"></i>
+                            <i><img src="images/star.svg"></i>
+                            <i><img src="images/star.svg"></i>
+                            <i><img src="images/star.svg"></i>
+                            <i><img src="images/star.svg"></i>
+                        </div>
+                        <img class="user" src="images/user-2.png">
+                        <h3>Steven Coker</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="quote"><img src="images/quote-left.svg"></i>
+                        <p>
                             VcardPay's mobile wallet integration is a game-changer. My customers love the convenience,
                             and I've seen a boost in sales. The support team is always there to help, making the whole
                             experience smooth. Highly recommend VcardPay!
@@ -198,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div class="sponsors">
+        <div id="sponsors" class="sponsors">
             <div class="small-container">
                 <img src="images/icons8-visa.svg" width="100">
                 <img src="images/icons8-fedex.svg" width="80">
@@ -210,12 +227,11 @@
                 <img src="images/icons8-chrysler.svg" width="80">
             </div>
         </div>
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="small-container">
                 <div class="row">
                     <div class="col-2">
-                        <img width="100%" class="illustration"
-                            src="images/profile_data_illustration02.svg">
+                        <img width="100%" class="illustration" src="images/profile_data_illustration02.svg">
                     </div>
                     <div class="col-2">
                         <h3>Get in Touch with VcardPay - We are Here to Help.</h3>
@@ -235,75 +251,67 @@
     <footer>
         <div class="small-container">
             <div class="footer-links">
-                <div class="container">
-                    <div class="download-container">
-                        <h3>Download Our App</h3>
-                        <p>Download App for Andriod and ios mobile phone.</p>
-                        <div class="download">
-                            <img style="padding-right: 10px;" src="images/play-store.png">
-                            <img src="images/app-store.png">
+                <div class="container footer-row">
+                    <div class="footer-col">
+                        <div class="download-container">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Andriod and ios mobile phone.</p>
+                            <div class="download">
+                                <img style="padding-right: 10px;" src="images/play-store.png">
+                                <img src="images/app-store.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="company-caption">
-                        <img src="images/LOGO.png">
-                        <p>© 2024 VcardPay - Transforming Payments, Elevating Experiences. Thank you for choosing
-                            VcardPay, where innovation meets convenience. We are committed to providing you with the
-                            best payment solutions and exceptional service.
-                        </p>
+                    <div class="footer-col">
+                        <div class="company-caption">
+                            <img src="images/LOGO.png">
+                            <p>© 2024 VcardPay - Transforming Payments, Elevating Experiences. Thank you for choosing
+                                VcardPay, where innovation meets convenience. We are committed to providing you with the
+                                best payment solutions and exceptional service.
+                            </p>
+                        </div>
                     </div>
-                    <div class="useful-links">
-                        <h3>Useful Links</h3>
-                        <a href="#">We are Hiring</a>
-                        <a href="#">Skill Acquisition</a>
-                        <a href="#">Privacy Policy</a>
+                    <div class="footer-col">
+                        <div class="useful-links">
+                            <h3>Useful Links</h3>
+                            <a href="#">We are Hiring</a>
+                            <a href="#">Skill Acquisition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <hr>
-            <div class="copyright">Made with Love By <a href="#">Abayomi Oladosu</a></div>
-            <div class="social-container">
-                <div class="social-media">
-                    <a target="_blank" href="https://www.linkedin.com/in/oladosuabayomi/"><img
-                            src="images/icons8-linkedin-48.png" width="30"
-                            style="background-color: white; padding: 2px; border-radius: 50%;"></a>
-                    <a href="https://twitter.com/abayomi_oladosu"><img src="images/icons8-twitterx-50.png" width="30"
-                            style="background-color: white; padding: 6px; border-radius: 50%;"></a>
-                    <a href="https://www.instagram.com/_oladosuabayomi/"><img class="instagram"
-                            src="images/icons8-instagram-48.png" width="30"
-                            style="background-color: white; padding: 2px; border-radius: 50%;"></a>
                 </div>
             </div>
         </div>
+        </div>
+        <hr>
+        <div class="copyright">Made with Love By <a href="#">Abayomi Oladosu</a></div>
+        <div class="social-container">
+            <div class="social-media">
+                <a target="_blank" href="https://www.linkedin.com/in/oladosuabayomi/"><img
+                        src="images/icons8-linkedin-48.png" width="30"
+                        style="background-color: white; padding: 2px; border-radius: 50%;"></a>
+                <a href="https://twitter.com/abayomi_oladosu"><img src="images/icons8-twitterx-50.png" width="30"
+                        style="background-color: white; padding: 6px; border-radius: 50%;"></a>
+                <a href="https://www.instagram.com/_oladosuabayomi/">
+                    <img class="instagram" src="images/icons8-instagram-48.png" width="30"
+                        style="background-color: white; padding: 2px; border-radius: 50%;">
+                </a>
+            </div>
+        </div>
+        </div>
     </footer>
     <script>
-        // script.js
-document.addEventListener("DOMContentLoaded", () => {
-    const menuIcon = document.getElementById('menu-icon');
-    const menu = document.getElementById('top-nav');
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const menu = document.getElementById('top-nav');
 
-    menuIcon.addEventListener('click', () => {
-        menuIcon.classList.toggle('change');
-        menu.classList.toggle('open');
-    });
-});
+            menuIcon.addEventListener('click', () => {
+                menuIcon.classList.toggle('change');
+                menu.classList.toggle('open');
+            });
+        });
 
     </script>
-    <!--  <script>
-        function menutoggle() {
-            var nav = document.querySelector('nav');
-            var overlay = document.querySelector('.overlay');
-            nav.classList.toggle('active');
-            overlay.classList.toggle('active');
-        }
-
-        function closeMenu() {
-            var nav = document.querySelector('nav');
-            var overlay = document.querySelector('.overlay');
-            nav.classList.remove('active');
-            overlay.classList.remove('active');
-        }
-
-    </script>  -->
 
 </body>
 

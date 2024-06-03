@@ -11,7 +11,14 @@ body {
     overflow-x: hidden;
 }
 
-* {
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +26,7 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 12px 0;
     color: #5e5e5e;
 }
@@ -59,7 +66,7 @@ p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .col-3 {
@@ -81,7 +88,7 @@ p {
 }
 
 .col-2 {
-    flex-basis: 30%;
+    flex-basis: 45%;
     min-width: 300px;
 }
 
@@ -136,6 +143,7 @@ header {
 .verification {
     padding-left: 40px;
 }
+
 .verification a.signUp,
 .verification a.login {
     text-decoration: none;
@@ -210,10 +218,45 @@ header {
     text-align: center;
 }
 
-.hero-info h2 {
+.hero-info h1 {
+    font-size: 40px;
+    color: #f0f0f0;
+    display: inline-block;
+    border-right: 2px solid black;
+    /* Cursor effect */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide the overflow text */
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* .hero-info h2 {
     font-size: 40px;
     color: white;
-}
+} */
 
 .hero-info p {
     margin: 20px 0;
@@ -234,7 +277,7 @@ header {
 
 /* ABOUT */
 .about {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 /* SERVICES */
@@ -256,7 +299,7 @@ header {
     background-color: #f0f0f0;
     padding: 30px 20px;
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
-    height: 360px;
+    height: 380px;
 }
 
 /* TESTIMONIAL */
@@ -272,7 +315,7 @@ header {
     box-shadow: 0 8px 16px rgba(124, 124, 124, 0.4);
     cursor: pointer;
     transition: transform 0.5s;
-    height: 400px;
+    height: 420px;
 }
 
 .rating img {
@@ -360,10 +403,10 @@ footer .footer-links a:hover {
     transition: 0.3s;
 }
 
-footer .footer-links .container {
+.footer-row {
     display: flex;
-    width: 900px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 footer .footer-links .download-container .download {
@@ -376,28 +419,26 @@ footer .footer-links .download-container img {
 }
 
 footer .footer-links .download-container {
-    flex-basis: 30%;
     font-size: 12px;
+    margin-bottom: 20px;
 }
 
 footer .footer-links .company-caption {
-    flex-basis: 40%;
-    margin: 0 auto;
-    text-align: center;
     font-size: 12px;
+    width: 50%;
 }
 
 footer .footer-links .company-caption img {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 footer .footer-links .useful-links {
-    flex-basis: 10%;
     font-size: 12px;
 }
 
 footer h3 {
     margin-bottom: 10px;
+    color: #f0f0f0;
 }
 
 footer hr {
@@ -428,6 +469,10 @@ footer hr {
         font-size: 14px;
     }
 
+    .hero-info h1 {
+        font-size: 22px;
+    }
+
     .menu-icon {
         display: flex;
     }
@@ -436,16 +481,17 @@ footer hr {
         width: 100%;
     }
 
-    h3 {
-        font-size: 18px;
+    h2 {
+        font-size: 20px;
     }
 
-    .hero-info h2 {
-        font-size: 30px;
+    h3 {
+        font-size: 16px;
+
     }
 
     .hero-info p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .top-nav {
@@ -459,7 +505,7 @@ footer hr {
         justify-content: flex-start;
         transition: 0.3s;
         padding-top: 40px;
-       padding-right: 40px; 
+        padding-right: 40px;
         align-items: center;
     }
 
@@ -498,32 +544,31 @@ footer hr {
     .verification {
         padding-left: 0;
     }
+
     .verification a.signUp,
     .verification a.login {
         font-size: 10px;
         width: 70px;
     }
-   
-    .col-2, .col-3 {
+
+    .col-2,
+    .col-3 {
         flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services .col-3,
+    .testimonial .col-3 {
         margin-bottom: 20px;
         height: auto;
     }
-
-    .services, .testimonial, .contact, footer {
-        padding: 20px 0;
-    }
-
-    .services .col-3, .testimonial .col-3 {
-        margin-bottom: 20px;
-    } 
 
     .sponsors .small-container {
         flex-direction: column;
     }
 
     footer .footer-links .container {
-       width: 100%;
+        width: 100%;
         flex-direction: column;
         padding-top: 20px;
     }
@@ -549,3 +594,170 @@ footer hr {
     }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .hero-info h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .top-nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #333333e3;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: 0.3s;
+        padding-top: 60px;
+        align-items: center;
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-nav ul li {
+        padding: 20px;
+        border-bottom: 1px solid #444;
+        margin-right: 0;
+    }
+
+    .top-nav ul li a {
+        color: #fff;
+    }
+
+    .top-nav.open {
+        right: 0;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* HERO SECTION */
+    .col-2,
+    .col-3 {
+        flex-basis: 100%;
+        padding: 40px 40px;
+        margin-bottom: 20px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .services .col-3,
+    .testimonial .col-3 {
+        height: auto;
+    }
+
+    .services,
+    .testimonial,
+    .contact,
+    footer {
+        padding: 40px 0;
+    }
+
+    .about p,
+    .services p,
+    .testimonial p,
+    .contact p {
+        font-size: 18px;
+    }
+
+    .sponsors .small-container {
+        flex-direction: column;
+    }
+
+    footer .footer-links .container {
+        width: 50%;
+        flex-direction: column;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    footer .footer-links .download-container .download {
+        flex-direction: column;
+    }
+
+    footer .footer-links .download-container img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    footer .footer-links .company-caption {
+        text-align: left;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+.logo {
+    width: 16px;
+}
+    .top-nav li {
+        display: inline;
+        margin-right: 14px;
+    }
+    
+    .top-nav li:last-child {
+        margin-right: 0;
+    }
+    
+    
+    .top-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .verification {
+        padding-left: 10px;
+    }
+    
+    .verification a.signUp,
+    .verification a.login {
+        width: 70px;
+        font-size: 11px;
+        padding: 4px;
+    }
+    
+    .verification a.login {
+        padding: 5px;
+    }
+
+.col-2, .col-3 {
+    flex-basis: 48%;
+}
+
+}
