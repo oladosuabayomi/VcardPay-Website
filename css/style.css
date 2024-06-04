@@ -594,7 +594,7 @@ footer hr {
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 819px) {
     header {
         padding: 20px 30px;
     }
@@ -720,7 +720,7 @@ footer hr {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 820px) and (max-width: 1100px) {
 .logo {
     width: 16px;
 }
