@@ -1,7 +1,7 @@
 # Vcardpay Website
 ---
 ## Screenshots
-
+![Homepage](images/Screenshot_Vcardpay.jpg)
 
 ## Overview
 
@@ -49,4 +49,5 @@ Vcardpay is a fictional website designed as an implementation project inspired b
   - [Visual Studio Code (VSCode)](https://code.visualstudio.com)
   - Various VSCode extensions for productivity and code quality.
 
-<a href="https://oladosuabayomi.github.io/Static-website/">Static website</a>
+## Check it out
+- **VcardPay**: [VcardPay](https://oladosuabayomi.github.io/VcardPay-Website/)
