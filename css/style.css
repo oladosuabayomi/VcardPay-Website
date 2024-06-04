@@ -101,6 +101,11 @@ header {
     padding: 20px 60px;
     background-color: #535353e4;
     color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 /* NAV SECTION */
@@ -721,19 +726,20 @@ footer hr {
 }
 
 @media (min-width: 820px) and (max-width: 1100px) {
-.logo {
-    width: 16px;
-}
+    .logo {
+        width: 16px;
+    }
+
     .top-nav li {
         display: inline;
         margin-right: 14px;
     }
-    
+
     .top-nav li:last-child {
         margin-right: 0;
     }
-    
-    
+
+
     .top-nav li a {
         text-decoration: none;
         color: white;
@@ -744,20 +750,21 @@ footer hr {
     .verification {
         padding-left: 10px;
     }
-    
+
     .verification a.signUp,
     .verification a.login {
         width: 70px;
         font-size: 11px;
         padding: 4px;
     }
-    
+
     .verification a.login {
         padding: 5px;
     }
 
-.col-2, .col-3 {
-    flex-basis: 48%;
-}
+    .col-2,
+    .col-3 {
+        flex-basis: 48%;
+    }
 
 }
