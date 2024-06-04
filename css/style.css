@@ -521,7 +521,7 @@ footer hr {
         top: 0;
         right: -250px;
         width: 60%;
-        height: 60%;
+        height: 100%;
         background-color: #333333e3;
         flex-direction: column;
         justify-content: flex-start;
